@@ -6,11 +6,18 @@ body {
     color: #222;
 }
 .navbar {
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
     background: #fff;
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
     z-index: 1000;
+    transition: transform 0.3s cubic-bezier(.4,0,.2,1);
+    transform: translateY(-100%);
+}
+body {
+    padding-top: 68px; /* Adjust to navbar height */
 }
 .navbar ul {
     display: flex;
@@ -170,9 +177,16 @@ body {
     margin: 0 0 0.5rem 0;
     color: #0078d7;
 }
+.contact-info {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 1.25rem;
+    color: #222;
+}
 .contact-info a {
     color: #0078d7;
     text-decoration: none;
+    font-family: inherit;
+    font-size: inherit;
 }
 .contact-info a:hover {
     text-decoration: underline;

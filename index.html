@@ -103,32 +103,32 @@
         <li class="timeline-entry">
             <img src="assets/images/project3_logo.png" alt="Project 3 Logo" class="edu-exp-logo">
             <div class="timeline-content">
-                <strong>Mobile Health App</strong><br>
-                <span>Designed and launched a cross-platform app to track and improve daily health habits.</span><br>
+                <strong>HP - Strategic Market Analysis & Opportunity Identification</strong><br>
+                <span>A comprehensive analysis of HP’s brand, market trends, competitive positioning, and audience insights, culminating in strategic proposals to strengthen its market presence</span><br>
                 <a href="assets/docs/project3.pdf" target="_blank" class="project-link">Click here to view</a>
             </div>
         </li>
         <li class="timeline-entry">
             <img src="assets/images/project4_logo.png" alt="Project 4 Logo" class="edu-exp-logo">
             <div class="timeline-content">
-                <strong>EdTech Recommendation Engine</strong><br>
-                <span>Created a personalized course recommendation system for an online learning platform.</span><br>
+                <strong>User Privacy Insights & Strategic Opportunities in Hospitality Apps</strong><br>
+                <span>A research-driven study examining user privacy perceptions in hospitality apps, leading to actionable insights and recommendations for more transparent and user-centric data practices</span><br>
                 <a href="assets/docs/project4.pdf" target="_blank" class="project-link">Click here to view</a>
             </div>
         </li>
         <li class="timeline-entry">
             <img src="assets/images/project5_logo.png" alt="Project 5 Logo" class="edu-exp-logo">
             <div class="timeline-content">
-                <strong>Secure Payments Gateway</strong><br>
-                <span>Engineered a secure, scalable payment gateway for e-commerce applications.</span><br>
+                <strong>Concept Selection Matrix – Red Lipstick Product Strategy</strong><br>
+                <span>A comparative analysis of product concepts for a red lipstick launch, using defined criteria to guide selection and strategic alignment</span><br>
                 <a href="assets/docs/project5.pdf" target="_blank" class="project-link">Click here to view</a>
             </div>
         </li>
         <li class="timeline-entry">
             <img src="assets/images/project6_logo.png" alt="Project 6 Logo" class="edu-exp-logo">
             <div class="timeline-content">
-                <strong>AI Chatbot for Support</strong><br>
-                <span>Implemented an AI-powered chatbot to automate and enhance customer support interactions.</span><br>
+                <strong>Reimagining Urban Waste Management through Transparency and Engagement</strong><br>
+                <span>A research-driven project analyzing gaps in waste management transparency and public involvement, culminating in a data-informed, stakeholder-backed solution</span><br>
                 <a href="assets/docs/project6.pdf" target="_blank" class="project-link">Click here to view</a>
             </div>
         </li>
@@ -137,13 +137,42 @@
         <section id="contact" class="section">
             <h2>Contact</h2>
             <div class="contact-info">
-                <p>Email: <a href="mailto:anwaya@email.com">anwaya@email.com</a></p>
-                <p>LinkedIn: <a href="https://linkedin.com/in/anwaya" target="_blank">linkedin.com/in/anwaya</a></p>
+                <p>Email: <a href="mailto:anwayawad01@gmail.com">anwayawad01@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/anwaya-wadnerkar-59b15a162/" target="_blank">linkedin.com/in/anwaya-wadnerkar-59b15a162</a></p>
             </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2025 Anwaya Wadnerkar</p>
     </footer>
+<script>
+// Floating navbar: hide by default, show on scroll up or at top
+let lastScrollTop = 0;
+const navbar = document.querySelector('.navbar');
+let navbarVisible = false;
+window.addEventListener('scroll', function() {
+    let st = window.pageYOffset || document.documentElement.scrollTop;
+    if (st <= 0) {
+        // At the very top, show navbar
+        if (!navbarVisible) {
+            navbar.style.transform = 'translateY(0)';
+            navbarVisible = true;
+        }
+    } else if (st > lastScrollTop) {
+        // Scrolling down, hide navbar
+        if (navbarVisible) {
+            navbar.style.transform = 'translateY(-100%)';
+            navbarVisible = false;
+        }
+    } else {
+        // Scrolling up, show navbar
+        if (!navbarVisible) {
+            navbar.style.transform = 'translateY(0)';
+            navbarVisible = true;
+        }
+    }
+    lastScrollTop = st <= 0 ? 0 : st;
+}, false);
+</script>
 </body>
 </html>
